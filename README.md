@@ -1,4 +1,4 @@
-# Camunda Guide
+# A Software Engineer's Guide
 
 ## Camunda Platform Setup
 A simplified guide to setup Camunda Platform with options to use H2 databse or PostgreSQL provided by Spring profiles.<br />

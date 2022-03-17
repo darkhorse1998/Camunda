@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "0f2a347c-11ed-4fc4-8730-3dbe42f3364e",
+		"name": "Spring-Security",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "accessible",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/accessible",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accessible"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forbidden",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/forbidden",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"forbidden"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

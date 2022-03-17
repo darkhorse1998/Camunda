@@ -4,13 +4,17 @@ camunda:
     admin-user:
       id: demo
       password: demo
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./camunda-h2-database
   
 #choose the profile according to the database used
 #'h2'--> h2-database
 #'postgres' --> postgres
-spring:
-  profiles:
-    active: h2
+#spring:
+#  profiles:
+#    active: h2
 
 
 #'h2' database profile only
@@ -30,9 +34,29 @@ spring:
       on-profile: postgres  
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://postgres-db-postgresql-hl.postgres:5432/camunda
-    username: camunda
-    password: camunda
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
+
+#'custom-postgres' database profile only
+---
+spring:
+  config:
+    activate:
+      on-profile: custom-postgres
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${spring.datasource.url}
+    username: ${spring.datasource.username}
+    password: ${spring.datasource.password}
   jpa:
     hibernate:
       ddl-auto: none

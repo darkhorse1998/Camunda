@@ -15,13 +15,13 @@ The following dependencies need to be present and configured in your system:
 ## How to Build and Run
 Follow these steps:
 1. Clone [this repo](https://github.com/darkhorse1998/Camunda.git). It is suggested that you clone the entire repo and then move on to individual modules.
-2. Open the cloned repo and change directory into the camunda-engine by ```cd camunda-engine```
+2. Open the cloned repo and change directory into the camunda-engine by ```cd camunda-platform-setup```
 3. Build a JAR by ```mvn clean package```
 4. Depending on your database usage preferrence, run the JAR using coressponding profile. By default, H2 database will be used. Checkout the **Configuration** section for more details.
 5. By default, camunda-engine will run on port 8080. Make sure the port is not pre-occupied and is functioning properly. You can also tweak the port settings later.
 
 ## Configurations
-* Database: To configure Camunda Platform according to the desired database, use the following in the cloned repo directory
+* Database: To configure Camunda Platform according to the desired database, use the following inside the `camunda-platform-setup` directory:
     * H2-database (default): ```java -jar target/camunda-engine-1.0.0-SNAPSHOT.jar --spring.profiles.active=h2``` or simply ```java -jar target/camunda-engine-1.0.0-SNAPSHOT.jar```
     * PosgresSQL: ```java -jar target/camunda-engine-1.0.0-SNAPSHOT.jar --spring.profiles.active=postgres```<br />
 **Note**: By default, the properties have been configured to look for PostgreSQL on ```localhost:5432```. If you have configured PostgreSQL differently (say, cloud deployment) or in some different port, you need to execute the **custom-postgres** profile:<br />

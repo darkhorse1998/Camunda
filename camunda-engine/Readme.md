@@ -25,6 +25,7 @@ Follow these steps:
     * H2-database (default): ```java -jar camunda-engine-1.0.0-SNAPSHOT.jar --spring.profiles.active=h2``` or simply ```java -jar camunda-engine-1.0.0-SNAPSHOT.jar```
     * PosgresSQL: ```java -jar camunda-engine-1.0.0-SNAPSHOT.jar --spring.profiles.active=postgres```<br />
 **Note**: By default, the properties have been configured to look for PostgreSQL on ```localhost:5432```. If you have configured PostgreSQL differently (say, cloud deployment) or in some different port, you need to execute the **custom-postgres** profile:<br />
+
 ```
 java -jar camunda-engine-1.0.0-SNAPSHOT.jar --spring.profiles.active=custom-postgres --spring.datasource.url=jdbc:postgresql://<postgres-host>:<postgres-port>/<database-name> --spring.datasource.username=<username> --spring.datasource.password=<password>
 ```

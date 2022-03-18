@@ -23,23 +23,37 @@ Follow these steps:
 
 * Jasypt Configurations:
     * Default: By default, Jasypt will implement encryption in the **application.properties** file. The contents which need to be encrypted should placed inside a **DEC()** property.
-Example: ```project.password=DEC(password)```<br />
-State of *application.properties* file before encryption:
-![application.properties before example](docs/properties-before.png)
+<br />
 
-To get the contents encrypted, run ```mvn jasypt:encrypt -Djasypt.encryptor.password=<private-key>```<br />
-Replace ```<private-key>``` with any desired key for the encryption. This will be used to decrypt the contents later. In the given project, the *private-key* is set to *jasypt*<br />
+Example: ```project.password=DEC(password)```
+<br />
+
+State of *application.properties* file before encryption:
+<br />
+
+![application.properties before example](docs/properties-before.png)
+<br />
+
+To get the contents encrypted, run ```mvn jasypt:encrypt -Djasypt.encryptor.password=<private-key>```<br />	
+Replace ```<private-key>``` with any desired key for the encryption. This will be used to decrypt the contents later. In the given project, the *private-key* is set to *jasypt*
+<br />
+
 State of *application.properties* file after encryption:
 ![application.properties after example](docs/properties-after.png)
+<br />
+
     * Custom: If the properties are present in a *.yaml* file, its location must be specified while encrypting.<br />
 ![application.properties before example](docs/yaml-before.png)
 To get the contents encrypted, run ```mvn jasypt:encrypt -Djasypt.encryptor.password=<private-key> -Djasypt.plugin.path="file:<location-of-file>"```<br />
 Example: ```mvn jasypt:encrypt -Djasypt.encryptor.password=jasypt -Djasypt.plugin.path="file:src/main/resources/application-properties.yaml"```
+<br />
+
 ![application.properties before example](docs/yaml-after.png)
 
 **Note**: If you want to run the Spring Boot project as a Java application, you have to provide ```-Djasypt.encryptor.password=<private-key>``` in the *VM arguments* in the *Run-Configuration*.
+<br />
+
+Run Configurations
 ![run-configuration](docs/run-configuration.png)
-
-
 
 Endnote: The JAR name may vary if you have customised the build in the pom.xml

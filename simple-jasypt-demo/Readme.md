@@ -11,7 +11,7 @@ The following dependencies need to be present and configured in your system:
 Follow these steps:
 
 1. Clone [this repo](https://github.com/darkhorse1998/Guide-of-a-Software-Engineer). It is suggested that you clone the entire repo and then move on to individual modules.
-2. Open the cloned repo and change directory into the simple-spring-security by ```cd simple-jasypyt-demo```
+2. Open the cloned repo and change directory into the simple-spring-security by ```cd simple-jasypt-demo```
 3. Build a JAR by ```mvn clean package```
 4. Run the JAR by ```java -Djasypt.encryptor.password=jasypt -jar target/simple-jasypyt-demo-0.0.1-SNAPSHOT.jar```
 5. By default, the application will run on port 8081. Make sure the port is not pre-occupied and is functioning properly. You can also tweak the port settings later.

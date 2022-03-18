@@ -9,6 +9,6 @@ A simplified guide to Spring Security consisting of examples of API endpoints wh
 Checkout the guide [here](https://github.com/darkhorse1998/Guide-of-a-Software-Engineer/tree/master/simple-spring-security)
 
 
-## Simple Spring Security
+## Simple Jasypt Demo
 A simplified guide to encryption of configurations in Spring Boot application using Jasypt. Vital information passed as configuration properties include user credentials, database credentials etc. These need to be encrypted for security reasons.<br />
 Checkout the guide [here](https://github.com/darkhorse1998/Guide-of-a-Software-Engineer/tree/master/simple-jasypt-demo)

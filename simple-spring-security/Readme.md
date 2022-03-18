@@ -6,6 +6,7 @@ The following dependencies need to be present and configured in your system:
 * Java 11 or higher
 * Maven
 * Java IDE (such as Eclipse), if you want to modify the code further
+* Postman
 
 ## How to Build and Run
 Follow these steps:

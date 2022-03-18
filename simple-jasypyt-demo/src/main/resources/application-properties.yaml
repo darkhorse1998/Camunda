@@ -1,0 +1,8 @@
+#Dummy Credentials
+project:
+  username: DEC(root)
+  password: DEC(password)
+
+#Server Port settings to demonstrate Jasypt's use case
+server:
+  port: DEC(8081)

@@ -16,7 +16,6 @@ Follow these steps:
 4. Run the JAR by ```java -jar target/simplespringsecurity-0.0.1-SNAPSHOT.jar```
 5. By default, the application will run on port 8080. Make sure the port is not pre-occupied and is functioning properly. You can also tweak the port settings later.
 6. Endpoints can be tested by sending **Postman** requests. Example: ```http://localhost:8080/auth``` with necessary credentials in the **Authorization** tab of Postman. For accessing the credentials, please refer to the **Configuration** section below.
-<br />
 
 Example of testing endpoing in Postman:
 ![Postman Example](docs/postman-auth.png)
@@ -34,7 +33,6 @@ It is recommended to use **Postman** for testing purpose. A Post Collection is a
 * Credentials: Default credentials are:
     * Username: demo
     * Password: demo
-<br />
 
 Credentials can be modified in the **application.yaml** file using ```spring.security.user.name=<username>``` and ```spring.security.user.password=<password>```
 
